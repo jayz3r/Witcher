@@ -23,23 +23,20 @@ modal.onclick = (event) => {
 };
 
 /// Open modal 10sec after launch
-setTimeout(() => {
-  openModal();
-}, 10000);
+// setTimeout(() => {
+//   openModal();
+// }, 10000);
 
 
 
 ///Open modal when user on bottom of page
-function IsBottom() {
+const onScroll =()=> {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
         openModal();
         window.removeEventListener("scroll", onScroll);
     }
 }
 
-function onScroll() {
-    IsBottom();
-}
 
 // Add the scroll event listener
 window.addEventListener("scroll", onScroll);

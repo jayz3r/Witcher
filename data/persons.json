@@ -1,0 +1,26 @@
+[
+  {
+    "person_name": "Geralt of Rivia",
+    "person_photo": "https://i.pinimg.com/originals/4b/54/b2/4b54b2d265b6419f017258efcd6bb8a6.jpg",
+    "person_nick": "White Wolf",
+    "person_desc":"A legendary witcher of the School of the Wolf active throughout the 13th century. He loved the sorceress Yennefer, considered the love of his life despite their tumultuous relationship, and became Ciri's adoptive father.",
+    "person_height": 185,
+    "person_age": "90-100"
+  },
+  {
+    "person_name": "Cirilla",
+    "person_photo": "https://i.pinimg.com/originals/b8/08/82/b80882b320934498d052995a9d7e1a52.jpg",
+    "person_nick": "Lady of Space and Time",
+    "person_desc":"She was the sole princess of Cintra, the daughter of Pavetta and Emhyr var Emreis (who was using the alias 'Duny' at the time) as well as Queen Calanthe's granddaughter..",
+    "person_height": 168,
+    "person_age": 24
+  },
+  {
+    "person_name": "Jaskier",
+    "person_photo": "https://i.pinimg.com/originals/b0/74/95/b07495493ce5e851ce5ce05197d2647a.jpg",
+    "person_nick": "Dandelion",
+    "person_desc":"Julian Alfred Pankratz, Viscount de Lettenhove better known as Jaskier (b. 1222), was a bard and a close friend of Geralt of Rivia.",
+    "person_height": 178,
+    "person_age": 43
+  }
+]
