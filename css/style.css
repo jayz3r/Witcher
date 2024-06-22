@@ -1,4 +1,7 @@
 /* HEADER */
+.wrapper{
+  background-image: url('https://www.thewitcher.com/build/images/background-8750b1dd..webp');
+}
 @font-face {
   font-family: witcher;
   src: url(Thewitcher-jnOj.ttf);
@@ -68,10 +71,16 @@
 .inner_main {
   /* position: fixed; */
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  
   color: #f1f1f1;
   width: 100%;
+  
   /* padding: 20px; */
+}
+.slider_block::after{
+  background: linear-gradient(transparent, #daeaea);
+  bottom: 0;
+  height: 200px
 }
 #myVideo {
   bottom: 0;
@@ -122,7 +131,6 @@
 
 .slider_block {
   padding: 100px 0;
-  background: black;
 }
 
 .slider {
@@ -179,7 +187,6 @@
 /* VIDEO BLOCK */
 
 .block_video {
-  background: black;
   padding: 100px 0;
 }
 
@@ -254,7 +261,6 @@
 /*-------BOTTLE-------*/
 
 .botlle {
-  background: black;
   padding: 100px 0;
 }
 

@@ -2,7 +2,7 @@
 /* PHONE CHECKER */
 
 .phone_block {
-    background: black;
+
     padding: 100px 0;
 }
 
@@ -30,7 +30,6 @@
 /* TAB SLIDER */
 
 .tab_slider {
-    background: black;
     padding: 100px 0;
 }
 
@@ -89,7 +88,6 @@
 /*------CARD SWITCHER------*/
 
 .card_switcher {
-    background-color: black;
     padding: 100px 0;
 }
 
@@ -128,7 +126,6 @@
 
 .converter {
     padding: 100px 0;
-    background-color: black;
 }
 
 .inner_converter {
@@ -149,7 +146,6 @@
 
 .weather {
     padding: 100px 0;
-    background-color: black;
 }
 
 .inner_weather > div {

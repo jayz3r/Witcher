@@ -52,7 +52,6 @@ tabParent.onclick = (event) => {
   }
 };
 
-
 /// autoSlider
 let tabInterval;
 const autoSlider = (i = 0) => {
@@ -67,4 +66,63 @@ const autoSlider = (i = 0) => {
 };
 autoSlider();
 
+// Converter
 
+const usdInput = document.querySelector("#usd");
+const somInput = document.querySelector("#som");
+const euroInput = document.querySelector("#eur");
+// somInput.oninput =() =>{
+//   const request = new XMLHttpRequest()
+//   request.open("GET", "../data/converter.json")
+//   request.setRequestHeader('Content-type', 'application/json')
+//   request.send()
+
+//   request.onload = () =>{
+//     const data = JSON.parse(request.response)
+//     usdInput.value = (somInput.value / data.usd).toFixed(2)
+//   }
+// }
+// usdInput.oninput =() =>{
+//   const request = new XMLHttpRequest()
+//   request.open("GET", "../data/converter.json")
+//   request.setRequestHeader('Content-type', 'application/json')
+//   request.send()
+
+//   request.onload = () =>{
+//     const data = JSON.parse(request.response)
+//     somInput.value = (usdInput.value * data.usd).toFixed(2)
+//   }
+// }
+const converter = (element, targetElement, secTargetElement ) => {
+  element.oninput = () => {
+    const request = new XMLHttpRequest();
+    request.open("GET", "../data/converter.json");
+    request.setRequestHeader("Content-type", "application/json");
+    request.send();
+
+    request.onload = () => {
+      const data = JSON.parse(request.response);
+      switch (element.id) {
+        case "som":
+          targetElement.value = (element.value / data.usd).toFixed(2);
+          secTargetElement.value = (element.value / data.euro).toFixed(2)
+          break;
+        case "usd":
+          targetElement.value = (element.value * data.usd).toFixed(2);
+          secTargetElement.value = (element.value / data.euro).toFixed(2)
+          break;
+        case "eur":
+          targetElement.value = (element.value * data.euro).toFixed(2);
+          secTargetElement.value = (element.value * data.eurTOusd).toFixed(2)
+          break;
+        default:
+          break;
+      }
+      element.value === '' && (targetElement.value = '' || (secTargetElement.value = ' '))
+    };
+  };
+};
+
+converter(usdInput, somInput, euroInput);
+converter(somInput, usdInput, euroInput);
+converter(euroInput, somInput, usdInput );
