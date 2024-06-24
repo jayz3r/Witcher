@@ -1,8 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .container {
     width: 1200px;
@@ -10,7 +12,7 @@
 }
 
 body {
-    font-family: "Britannic Bold", sans-serif;
+    font-family: ff web pro, sans-serif;
     background-image: url('https://www.thewitcher.com/build/images/background-8750b1dd..webp');
 }
 
@@ -20,10 +22,11 @@ body {
     font-size: 20px;
     cursor: pointer;
     border: 1px solid var(--orange);
-    background: black;
+    background: transparent;
     color: var(--orange);
     border-radius: 8px;
-}
+}   
+
 
 .btn:hover {
     background: #414349;
@@ -90,9 +93,9 @@ input {
     height: 50px;
     font-size: 20px;
     padding-left: 5px;
-    color: var(--orange);
-    background: black;
-    border: 2px solid var(--orange);
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
 }
 
 .checker {
@@ -102,23 +105,21 @@ input {
 
 .btn-slide {
     display: block;
-    width: 100px;
-    height: 100px;
-    background: var(--orange);
-    color: black;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
     text-transform: uppercase;
-    border-radius: 50%;
     font-weight: 800;
     z-index: 1;
+    color: #4d4d4d;
 }
+
 
 .btn-slide:hover {
-    background: #b68733 !important;
     cursor: pointer;
     color: white;
+    transform: scale(1.6);
 }
-
 :root {
     --orange: orange;
     --black: black;

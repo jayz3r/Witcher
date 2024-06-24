@@ -78,3 +78,19 @@ request.onload = () => {
   });
 };
 
+/// Gmail validation
+const gmailInput = document.querySelector("#gmail_input");
+const gmailButton = document.querySelector("#gmail_button");
+const gmailSpan = document.querySelector("#gmail_result");
+
+const regExp = /^[\w-\.]+@gmail.com$/;
+
+gmailButton.onclick = () => {
+  if (regExp.test(gmailInput.value)) {
+    alertify.success('Success');
+  } else {
+    alertify.error('Invalid gmail address');
+
+  }
+};
+  

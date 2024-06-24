@@ -6,6 +6,10 @@
   font-family: witcher;
   src: url(Thewitcher-jnOj.ttf);
 }
+@font-face {
+  font-family: ff web pro;
+  src: url(FFGoodPro-Black.ttf);
+}
 .header {
   height: 80px;
   display: flex;
@@ -14,7 +18,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  font-family: witcher;
+  font-family: ff web pro;
 }
 .inner_header {
   height: 100%;
@@ -36,6 +40,7 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  font-family: witcher;
 }
 .logotype h2 {
   font-size: 3rem;
@@ -44,6 +49,50 @@
 
 /* HEADER MENU */
 
+.button {
+  background: rgba(0, 0, 0, .502);
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2.3px;
+  min-width: 226px;
+  padding: 2px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border:2px solid goldenrod;
+  color: rgb(255, 255, 255);
+  font-family: ff web pro;
+}
+
+.button>span:after, 
+.button>span:before {
+  background: #000;
+  clip-path: polygon(0 calc(50% - 5px), 5px 50%, 0 calc(50% + 5px), 0 100%, 2px 100%, 2px calc(50% + 5.5px), 7.5px 50%, 2px calc(50% - 5.5px), 2px 0, 0 0);
+  content: "";
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 48px;
+  transform: scaleY(1.01);
+  width: 60px;
+  background-color: goldenrod;
+  overflow: hidden;
+}
+.button span::after{
+  transform: scaleX(-1.01);
+}
+.button:hover{
+  background-color: rgb(0, 0, 0);
+  color: goldenrod;
+  overflow: visible;
+}
+.button span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid goldenrod;
+  border-bottom: 2px solid goldenrod;
+  overflow: hidden;
+}
 .menu {
   display: flex;
   justify-content: space-around;
@@ -110,15 +159,18 @@
 /* FOOTER */
 
 .footer {
-  background: #2c2d2f;
+  background: #000000;
   width: 100%;
 }
-
+.footer img{
+  width: 300px;
+}
 .inner_footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  /* height: 100px; */
+  padding: 50px 0 25px;
 }
 
 .footer h2 {
@@ -134,20 +186,23 @@
 }
 
 .slider {
-  position: relative;
   width: 100%;
-  height: 300px;
-  overflow: hidden;
-  border: 3px solid var(--orange);
-  border-radius: 20px;
+  overflow: visible;
+  border-width: 1px;
+  border:1px solid rgb(113, 131, 129);
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
+  background-image: url('https://www.thewitcher.com/build/images/about_background-4bc7291c..jpg');
+  background-position: bottom left ;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .slide {
-  position: absolute;
+  /* position: absolute; */
   top: 60px;
   left: 0;
   width: 100%;
@@ -155,14 +210,29 @@
   display: none;
   transition: opacity 0.5s ease-in-out;
 }
-
+.slide_card img{
+  width: 300px;
+  object-fit: cover;
+  height: 300px;
+  /* padding-bottom: ; */
+}
 .slide_card {
   color: white;
   margin: 0 auto;
-  width: 500px;
-  text-align: center;
+  /* width: 500px; */
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-evenly;
 }
-
+.slide_text{
+  position: relative;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 600px;
+}
 .slide_card h3 {
   color: white;
   text-transform: uppercase;
@@ -179,7 +249,12 @@
   color: var(--orange);
   text-decoration: underline;
 }
-
+.slider_buttons{
+  margin-top: 2rem;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+}
 .slide.active_slide {
   display: block;
 }
@@ -524,4 +599,35 @@
 .card:hover img {
   transition: opacity 0.3s ease-in;
   opacity: 0.5;
+}
+
+/* GMAIL BLOCK */
+
+.gmail_block {
+
+  padding: 100px 0;
+}
+
+.inner_gmail_block {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.form_gmail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.form_gmail input{
+  background-color: #00000000;
+}
+
+.form_gmail button {
+  width: 100%;
+  margin: 20px 0;
 }
