@@ -48,35 +48,35 @@ autoSlider(index);
 
 const cards = document.querySelector(".cards");
 
-const request = new XMLHttpRequest(); //1 creating request
-request.open("GET", "data/persons.json"); // 2 request method and url
-request.setRequestHeader("Content-type", "application/json"); // 3 request header
-request.send(); // 4 sending request
-
-request.onload = () => {
-  const data = JSON.parse(request.response);
-  data.forEach((persons) => {
-    console.log(persons);
-    const card = document.createElement("div");
+const getCardData = async () => {
+  const response =  await fetch('/data/persons.json')
+  const data = await response.json()
+  try{
+    data.forEach((persons) => {
+      const card = document.createElement("div");
     
     card.classList.add("card");
     card.innerHTML = `
-      <div class='card'>
-      <img src=${persons.person_photo}>
-      <h2>${persons.person_name}</h2>
+    <div class='card'>
+    <img src=${persons.person_photo}>
+    <h2>${persons.person_name}</h2>
       <p class="personNick">${persons.person_nick}</p>
       <div class='characteristics'>
       <span class="personAge">Age: ${persons.person_age}</span>
       <span class="personHeight">Height: ${persons.person_height}</span>
       </div>
-        <p class="personDesc">${persons.person_desc}</p>
+      <p class="personDesc">${persons.person_desc}</p>
       </div>
-
+        
       `;
-
+      
       cards.append(card);
-  });
-};
+      });
+    } catch(e){
+      console.error(e);
+    }
+    };
+    getCardData()
 
 /// Gmail validation
 const gmailInput = document.querySelector("#gmail_input");
@@ -85,6 +85,16 @@ const gmailSpan = document.querySelector("#gmail_result");
 
 const regExp = /^[\w-\.]+@gmail.com$/;
 
+gmailInput.oninput = () =>{
+  if (regExp.test(gmailInput.value)) {
+    gmailSpan.innerHTML = ''
+  } else if(!regExp.test(gmailInput.value)){
+    gmailSpan.innerHTML = 'invalid gmail'
+    gmailSpan.style.color = 'red'
+  } else{
+    gmailSpan.innerHTML = ''
+  }
+}
 gmailButton.onclick = () => {
   if (regExp.test(gmailInput.value)) {
     alertify.success('Success');
