@@ -5,6 +5,7 @@
 }
 
 .inner_phone_block {
+  background-color: black;
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -42,7 +43,10 @@
   /* flex-direction: column; */
   justify-content: center;
   height: 170px;
-  background-color: black;
+  background-image: url('https://www.thewitcher.com/build/images/about_background-4bc7291c..jpg');
+  background-position: bottom;
+  object-fit: cover;
+  background-size: cover;
 }
 .tab_content_block span{
     display: flex;
@@ -192,4 +196,31 @@ hr {
   border-radius: 10px;
 text-transform: uppercase;
 cursor: pointer;
+}
+
+@media (max-width:1164px) {
+  .tab_contents_block{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .tab_content_items{
+    display: flex;
+    flex-direction: row;
+    margin: 0 60px 20px 0;
+  }
+  .tab_content_block{
+    height: 250px;
+    font-size: 1.3rem;
+  }
+  .inner_card_switcher{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width:900px) {
+  .tab_content_block{
+    width: 600px;
+    height: 450px;
+    font-size: 1.3rem;
+  }
 }

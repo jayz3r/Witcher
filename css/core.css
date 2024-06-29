@@ -124,3 +124,30 @@ input {
   --orange: orange;
   --black: black;
 }
+
+
+@media (max-width:1164px) {
+  .container{
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:1080px) {
+  .container{
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (max-width:900px) {
+  .container{
+    width: 767px;
+    margin: 0 auto;
+  }
+}
+@media (max-width:780px) {
+  .container{
+    width: 700px;
+    margin: 0 auto;
+  }
+}

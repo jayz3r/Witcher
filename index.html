@@ -1,108 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Witcher</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/core.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="https://datadrivengaming.net/assets/pngs/Monsters_logo.png" type="image/x-icon">
-</head>
-<body>
-
-<div class="wrapper">
-    <div class="header">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/core.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="icon"
+      href="https://datadrivengaming.net/assets/pngs/Monsters_logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
         <div class="container">
-            <div class="inner_header">
-                <a href="index.html">
-                    <div class="logotype">
-                        <h2>The Witcher</h2>
-                    </div>
-                </a>
-                <ul class="menu">
-                    <li class="menu_link">
-                        <a href="pages/home_works.html">Home Works</a>
-                    </li>
-                    <li class="menu_link">
-                        <a href="pages/lessons.html">Lessons</a>
-                    </li>
-                    <li class="menu_link">
-                        <a href="pages/cards.html">Cards</a>
-                    </li>
-
-                </ul>
-                <button class="button" id="btn-get"><span> Click me!</span></button>
+          <div class="inner_header">
+            <a href="index.html">
+              <div class="logotype">
+                <h2>The Witcher</h2>
+              </div>
+            </a>
+            <div class="navBar">
+              <ul class="menu">
+                <li class="menu_link">
+                  <a href="pages/home_works.html">Home Works</a>
+                </li>
+                <li class="menu_link">
+                  <a href="pages/lessons.html">Lessons</a>
+                </li>
+                <li class="menu_link">
+                  <a href="pages/cards.html">Cards</a>
+                </li>
+              </ul>
+              <button class="button" id="btn-get">
+                <span> Click me!</span>
+              </button>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="main_block">
+      <div class="main_block">
         <div class="container">
-            <div class="inner_main">
-                
-                <video autoplay muted loop id="myVideo">
-                    <source src="https://cdn-l-thewitcher.cdprojektred.com/redkit/video/background-av1.mp4" type="video/mp4">
-                  </video>  
-                    <div class="cards"></div>
-            </div>
+          <div class="inner_main">
+            <div class="cards"></div>
+
+            <video autoplay muted loop id="myVideo">
+              <source
+                src="https://cdn-l-thewitcher.cdprojektred.com/redkit/video/background-av1.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
         </div>
-    </div>
+      </div>
+      <div class="cards-Block">
+        <div class="container"></div>
+      </div>
 
-    <div class="slider_block">
+      <div class="slider_block">
         <div class="container">
-            <div class="inner_slider">
-                <div class="slider">
-                    <div class="slide active_slide">
-                        <div class="slide_card">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/557703a2-f0df-4e9e-8006-f1a8a0666122/d8vlfyp-77b9b06f-2d43-4e4f-8288-672b1dae1210.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NzcwM2EyLWYwZGYtNGU5ZS04MDA2LWYxYThhMDY2NjEyMlwvZDh2bGZ5cC03N2I5YjA2Zi0yZDQzLTRlNGYtODI4OC02NzJiMWRhZTEyMTAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.caEbIKGkqFXvlVb9CMYArVDTIcCZKRytKhcIUd8m3dw" alt="witcher3">
-                            <div class="slide_text">
-                                <h3>The Witcher 3: Wild Hunt</h3>
-                                <p>Вы — Геральт из Ривии, наемный убийца чудовищ. Вы путешествуете по миру, в котором бушует война и на каждом шагу подстерегают чудовища. Вам предстоит выполнить заказ и найти Цири — Дитя Предназначения, живое оружие, способное изменить облик этого мира.<p>
-                                <a href="https://buy.thewitcher.com/en_kg/" target="_blank">узнать подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide_card">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6a848273-6e1e-4625-90b4-4cdb41532710/d5v6v9t-72efd0d5-0a53-4fd5-b21b-39594ef47137.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZhODQ4MjczLTZlMWUtNDYyNS05MGI0LTRjZGI0MTUzMjcxMFwvZDV2NnY5dC03MmVmZDBkNS0wYTUzLTRmZDUtYjIxYi0zOTU5NGVmNDcxMzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.voHnScRcDjHstnENned9I_VTJJURfiWa_mF2p04zDZw" alt="witcher2">
-                            <div class="slide_text">
-                                <h3>The Witcher 2: Wild Hunt</h3>
-                                <p>Пришло время невиданного хаоса. Могущественные силы сталкиваются в борьбе за власть и величие. Северные королевства готовятся к войне. Но даже армии не могут помешать этому заговору, и прольётся кровь…</p>
-                                <a href="https://buy.thewitcher.com/en_kg/#witcher2" target="_blank">узнать подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide_card">
-                            <img src="https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-24/256/The-Witcher-Enhaced-Edition-1-icon.png" alt="witcher">
-                            <div class="slide_text">
-                                <h3>The Witcher: Enhaced Edition</h3>
-                                <p>Ведьмак Геральт из Ривии, легендарный охотник на чудовищ, оказался в центре борьбы за мировое господство. Примерьте на себя его роль и погрузитесь в увлекательную историю, в которой вам предстоит не раз принимать сложные решения и сталкиваться с их последствиями.</p>
-                                <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_expressions" target="_blank">узнать подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide_card">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a98cff5d-a612-49d8-a0db-175994384b20/dduv7p7-ff0dc399-8353-4a58-899b-7fc7c042b44d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E5OGNmZjVkLWE2MTItNDlkOC1hMGRiLTE3NTk5NDM4NGIyMFwvZGR1djdwNy1mZjBkYzM5OS04MzUzLTRhNTgtODk5Yi03ZmM3YzA0MmI0NGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yoG-iCCewYbYRpIbfDpjMUcdYe7mIgtqLeUaWyca52w" alt="gwent">
-                            <div class="slide_text">
-                                <h3>GWENT - The Witcher Card Game</h3>
-                                <p>Герои из мира «Ведьмака» ждут вас в захватывающих карточных сетевых сражениях!</p>
-                                <a href="https://buy.thewitcher.com/en_kg/#merch" target="_blank">узнать подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider_buttons">
-                        <button class="btn-slide" id="prev"> <img src="https://www.thewitcher.com/build/images/arrow-b3fcfe67..svg" alt=""></button>
-                        <button class="btn-slide" id="next"> <img  class="next" src="https://www.thewitcher.com/build/images/arrow-b3fcfe67..svg" alt=""></button>
-                    </div>
+          <div class="inner_slider">
+            <div class="slider">
+              <div class="slide active_slide">
+                <div class="slide_card">
+                  <img
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/557703a2-f0df-4e9e-8006-f1a8a0666122/d8vlfyp-77b9b06f-2d43-4e4f-8288-672b1dae1210.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NzcwM2EyLWYwZGYtNGU5ZS04MDA2LWYxYThhMDY2NjEyMlwvZDh2bGZ5cC03N2I5YjA2Zi0yZDQzLTRlNGYtODI4OC02NzJiMWRhZTEyMTAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.caEbIKGkqFXvlVb9CMYArVDTIcCZKRytKhcIUd8m3dw"
+                    alt="witcher3"
+                  />
+                  <div class="slide_text">
+                    <h3>The Witcher 3: Wild Hunt</h3>
+                    <p>
+                      Вы — Геральт из Ривии, наемный убийца чудовищ. Вы
+                      путешествуете по миру, в котором бушует война и на каждом
+                      шагу подстерегают чудовища. Вам предстоит выполнить заказ
+                      и найти Цири — Дитя Предназначения, живое оружие,
+                      способное изменить облик этого мира.
+                    </p>
+                    <p>
+                      <a
+                        href="https://buy.thewitcher.com/en_kg/"
+                        target="_blank"
+                        >узнать подробнее</a
+                      >
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div class="slide">
+                <div class="slide_card">
+                  <img
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6a848273-6e1e-4625-90b4-4cdb41532710/d5v6v9t-72efd0d5-0a53-4fd5-b21b-39594ef47137.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZhODQ4MjczLTZlMWUtNDYyNS05MGI0LTRjZGI0MTUzMjcxMFwvZDV2NnY5dC03MmVmZDBkNS0wYTUzLTRmZDUtYjIxYi0zOTU5NGVmNDcxMzcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.voHnScRcDjHstnENned9I_VTJJURfiWa_mF2p04zDZw"
+                    alt="witcher2"
+                  />
+                  <div class="slide_text">
+                    <h3>The Witcher 2: Wild Hunt</h3>
+                    <p>
+                      Пришло время невиданного хаоса. Могущественные силы
+                      сталкиваются в борьбе за власть и величие. Северные
+                      королевства готовятся к войне. Но даже армии не могут
+                      помешать этому заговору, и прольётся кровь…
+                    </p>
+                    <a
+                      href="https://buy.thewitcher.com/en_kg/#witcher2"
+                      target="_blank"
+                      >узнать подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide_card">
+                  <img
+                    src="https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-24/256/The-Witcher-Enhaced-Edition-1-icon.png"
+                    alt="witcher"
+                  />
+                  <div class="slide_text">
+                    <h3>The Witcher: Enhaced Edition</h3>
+                    <p>
+                      Ведьмак Геральт из Ривии, легендарный охотник на чудовищ,
+                      оказался в центре борьбы за мировое господство. Примерьте
+                      на себя его роль и погрузитесь в увлекательную историю, в
+                      которой вам предстоит не раз принимать сложные решения и
+                      сталкиваться с их последствиями.
+                    </p>
+                    <a
+                      href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_expressions"
+                      target="_blank"
+                      >узнать подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide_card">
+                  <img
+                    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a98cff5d-a612-49d8-a0db-175994384b20/dduv7p7-ff0dc399-8353-4a58-899b-7fc7c042b44d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E5OGNmZjVkLWE2MTItNDlkOC1hMGRiLTE3NTk5NDM4NGIyMFwvZGR1djdwNy1mZjBkYzM5OS04MzUzLTRhNTgtODk5Yi03ZmM3YzA0MmI0NGQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yoG-iCCewYbYRpIbfDpjMUcdYe7mIgtqLeUaWyca52w"
+                    alt="gwent"
+                  />
+                  <div class="slide_text">
+                    <h3>GWENT - The Witcher Card Game</h3>
+                    <p>
+                      Герои из мира «Ведьмака» ждут вас в захватывающих
+                      карточных сетевых сражениях!
+                    </p>
+                    <a
+                      href="https://buy.thewitcher.com/en_kg/#merch"
+                      target="_blank"
+                      >узнать подробнее</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="slider_buttons">
+                <button class="btn-slide" id="prev">
+                  <img
+                    src="https://www.thewitcher.com/build/images/arrow-b3fcfe67..svg"
+                    alt=""
+                  />
+                </button>
+                <button class="btn-slide" id="next">
+                  <img
+                    class="next"
+                    src="https://www.thewitcher.com/build/images/arrow-b3fcfe67..svg"
+                    alt=""
+                  />
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- <div class="botlle">
+      <!-- <div class="botlle">
         <div class="container">
             <div class="bottle_inner">
                 <a href="pages/monster.html">
@@ -116,60 +198,99 @@
         </div>
     </div> -->
 
-    <div class="gmail_block">
+      <div class="gmail_block">
         <div class="container">
-            <img src="https://www.thewitcher.com/build/images/divider-long-354ec330..svg" alt="">
-            <div class="inner_gmail_block">
-                <div class="form_gmail">
-                    <label for="gmail_input"></label>
-                    <span class="checker" id="gmail_result"></span>
-                    <input type="text" id="gmail_input" placeholder="Enter your gmail address">
-                    <button class="btn" id="gmail_button">Check gmail</button>
-                </div>
+          <picture>
+            <source
+              media="(min-width:1164px )"
+              srcset="
+                https://www.thewitcher.com/build/images/divider-long-354ec330..svg
+              "
+            />
+            <source
+              media="(max-width:1163px )"
+              srcset="
+                https://www.thewitcher.com/build/images/divider-dark-014ff2af..svg
+              "
+            />
+            <img
+              src="https://www.thewitcher.com/build/images/divider-long-354ec330.svg"
+              alt="Divider"
+            />
+          </picture>
+          <div class="inner_gmail_block">
+            <div class="form_gmail">
+              <label for="gmail_input"></label>
+              <span class="checker" id="gmail_result"></span>
+              <input
+                type="text"
+                id="gmail_input"
+                placeholder="Enter your gmail address"
+              />
+              <button class="btn" id="gmail_button">Check gmail</button>
             </div>
-            <img src="https://www.thewitcher.com/build/images/divider-long-354ec330..svg" style="transform: scaleY(-1);" alt="">
+          </div>
+          <picture > 
+            <source
+              media="(min-width:1164px )"
+              srcset="
+                https://www.thewitcher.com/build/images/divider-long-354ec330..svg
+              "
+            />
+            <source
+              media="(max-width:1163px )"
+              srcset="
+                https://www.thewitcher.com/build/images/divider-dark-014ff2af..svg
+              "
+            />
+            <img style="transform: scaleY(-1);"
+              src="https://www.thewitcher.com/build/images/divider-long-354ec330.svg"
+              alt="Divider"
+            />
         </div>
-    </div>
+      </div>
 
-    <div class="footer">
+      <div class="footer">
         <div class="container">
-            <a href="https://www.thewitcher.com/kg/en/" target="_blank">
-                <div class="inner_footer">
-                    <img src="https://purepng.com/public/uploads/large/purepng.com-the-witcher-3-logowitcherthe-witcherandrzej-sapkowskiwriterfantasy-serieswitcher-geralt-of-riviawitchersbooksmonster-hunterssupernaturaldeadly-beastsseriesvideo-gamesxbox-1701528661070kdcxm.png" alt="">
-                </div>
-            </a>
+          <a href="https://www.thewitcher.com/kg/en/" target="_blank">
+            <div class="inner_footer">
+              <img
+                src="https://purepng.com/public/uploads/large/purepng.com-the-witcher-3-logowitcherthe-witcherandrzej-sapkowskiwriterfantasy-serieswitcher-geralt-of-riviawitchersbooksmonster-hunterssupernaturaldeadly-beastsseriesvideo-gamesxbox-1701528661070kdcxm.png"
+                alt=""
+              />
+            </div>
+          </a>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="modal">
-    <div class="modal_dialog">
+    <div class="modal">
+      <div class="modal_dialog">
         <div class="modal_content">
-            <form action="#">
-                <div class="modal_close">&times;</div>
-                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
-                <input
-                    required
-                    placeholder="Ваше имя"
-                    name="name"
-                    type="text"
-                    class="modal_input"
-                >
-                <input
-                    required
-                    placeholder="Ваш номер телефона"
-                    name="phone"
-                    type="text"
-                    class="modal_input"
-                >
-                <button class="btn btn_dark btn_min">Перезвонить мне</button>
-            </form>
+          <form action="#">
+            <div class="modal_close">&times;</div>
+            <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+            <input
+              required
+              placeholder="Ваше имя"
+              name="name"
+              type="text"
+              class="modal_input"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефона"
+              name="phone"
+              type="text"
+              class="modal_input"
+            />
+            <button class="btn btn_dark btn_min">Перезвонить мне</button>
+          </form>
         </div>
+      </div>
     </div>
-</div>
-
-</body>
-<script src="js/main.js"></script>
-<script src="js/modal.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+  </body>
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
 </html>

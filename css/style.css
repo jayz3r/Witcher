@@ -17,7 +17,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 354;
   font-family: ff web pro;
   background: linear-gradient(rgb(218, 234, 234), rgb(218, 234, 234) 10%, transparent);;
   padding: 20px 0;
@@ -28,6 +28,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.navBar{
+  display: flex;
+  align-items: center;
 }
 
 /* LOGOTYPE */
@@ -57,7 +61,7 @@
   cursor: pointer;
   font-size: 20px;
   letter-spacing: 2.3px;
-  min-width: 226px;
+  width: 226px;
   padding: 2px;
   text-transform: uppercase;
   border-radius: 5px;
@@ -543,6 +547,7 @@ width: 600px;
   align-items: center;
 }
 .card {
+  z-index: 1;
   flex-direction: column;
   display: flex;
   width: 24rem;
@@ -643,4 +648,87 @@ width: 600px;
 .form_gmail button {
   width: 100%;
   margin: 20px 0;
+}
+
+
+@media (max-width:1164px ) {
+  .inner_header{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }.inner_main{
+    color: #000;
+  }
+  .main_block{
+background-position: center;
+background-size: cover;
+  }
+  .gmail_block{
+    text-align: center;
+  }
+  #myVideo{
+    display: none;
+  }
+  video{
+    height: 1000px;
+  }
+  .button span{
+    width: 150px;
+  }
+  .button{
+    width: 157px;
+  }
+  .button>span:after, 
+.button>span:before{
+  width: 25px;
+}  
+.inner_slider{
+  display: flex;
+  justify-content: center;
+}
+.slider_buttons{
+  /* right: 0; */
+  bottom: 0;
+}
+.slider{
+width: 800px;
+  }
+  .slide_card{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .slide_card img{
+    width: 150px;
+    height: 150px;
+  }
+    .card{
+      width: 34rem;
+      height: 36rem;
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+}
+
+@media (max-width:780px) {
+  .card{
+    width: 26rem;
+    height: 30rem;
+  }
+  .slider{
+    width: 400px;
+    height: 500px;
+  }
+  .slide{
+    height:400px;
+  }
+  .slide_text{
+    width: 250px;
+    height: 300px;
+  }
 }
